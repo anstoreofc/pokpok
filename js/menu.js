@@ -78,7 +78,7 @@
                 `;
                 cartItemsContainer.appendChild(cartItem);
             });
-            cartTotalContainer.innerHTML = `<h3>Total: ${toRupiah(total)}</h3>`;
+            cartTotalContainer.innerHTML = `<h3>Total : ${toRupiah(total)}</h3>`;
 
             const checkoutBtn = document.querySelector('.checkout-btn');
             if (cart.length > 0) {
