@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Kedai Pokpok</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icsons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="/css/order.css" />
+    <script src="/js/menu.js"></script>
+</head>
+<body>
+    <header>MENU KEDAI POKPOK</header>
+    <div class="container">
+        <div class="menu-category">
+            <!-- Menu items -->
+        </div>
+                <div class="menu-category">
+            <h2>Menu Utama <span class="cart-icon" onclick="toggleCartModal()">🛒</span></h2>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuLS8BQUTKTVRjzZV9pwITqoHgtQhGro9dCsi3wneCQoPwp_J0KCLg6E&s=10" alt="Nasi Goreng Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Nasi Goreng Pokpok</h3>
+                    <p class="menu-item-description">Nasi goreng khas Warung Pokpok dengan daging ayam, udang, dan telur.</p>
+                    <p class="menu-item-price">Rp15.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Nasi Goreng Pokpok', 15000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CNXN9TyO-NedTdC4TRh9lW46xJkTsK_nx5YH_5eDp-_f9YmPOgUfBn_G&s=10" alt="Mie Ayam Pokpok Spesial">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Mie Ayam Pokpok Spesial</h3>
+                    <p class="menu-item-description">Mie pangsit dengan topping potongan daging ayam, pangsit goreng, sayuran, dan kuah kental khas Warung Pokpok.</p>
+              <p class="menu-item-price">Rp15.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Mie Ayam Pokpok Spesial', 15000)">Tambah ke Keranjang</button> 
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdembQYVq5DxtWAQCqUWnXRqJd_GEU8v7Wuco6HAHLjDvACWGvJUB7ieU&s=10" alt="Ayam Goreng Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Ayam Goreng Pokpok</h3>
+                    <p class="menu-item-description">Potongan ayam goreng renyah dengan bumbu khas Warung Pokpok.</p>
+           <p class="menu-item-price">Rp20.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Ayam Goreng Pokpok', 20000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h2>Makanan Ringan</h2>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgAIXp82df7kz7SBa9ExHC50mkNFtgG1d3Ba-dQyLLGTAhEWy3dpTgAh6&s=10">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Martabak Telur</h3>
+                    <p class="menu-item-description">Martabak telur dengan daging ayam, daun bawang, dan bumbu rempah khas.</p>
+                     <p class="menu-item-price">Rp20.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Martabak Telur', 20000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQnk8j8x0HkgIX9rsArQOdwzqadX-pxbJXJ9GTuZnuGsAGH4WazBOPQ4s&s=10" alt="Bakwan Jagung">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Bakwan Jagung</h3>
+                    <p class="menu-item-description">Bakwan jagung renyah dengan rasa gurih yang lezat.</p>
+                     <p class="menu-item-price">Rp10.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Bakwan Jagung', 10000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiiD9Oyn0u88YNn39Hc73X3UlEZ5sLX-ZOkvlm9dgqQYryyIrt_4tLsOc&s=10" alt="Kentang Goreng">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Kentang Goreng</h3>
+                    <p class="menu-item-description">Kentang goreng yang renyah di luar dan lembut di dalam.</p>
+                     <p class="menu-item-price">Rp12.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Kentang Goreng', 12000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h2>Minuman</h2>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tfJLcnrLejeyYpAfEScLejsIE74WwgSVSgSMF3vtlt8eAWE2jemDxPhv&s=10" alt="Es Teh Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Es Teh Pokpok</h3>
+                    <p class="menu-item-description">Teh manis dengan tambahan es batu.</p>
+                     <p class="menu-item-price">Rp3.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Es Teh Pokpok', 3000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYofn63OwhT9QpVjKJfAMPNyqFsmwu4yRo6g7d8RYSUIEls1xkNUZ7wA&s=10" alt="Es Jeruk Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Es Jeruk Pokpok</h3>
+                    <p class="menu-item-description">Jeruk segar yang diperas dengan tambahan es batu.</p>
+                     <p class="menu-item-price">Rp5.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Es Jeruk Pokpok', 5000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4qjNXKxbFjezPTFeTE8oTMqhwzJ-qzfmpZMjKnXVl1w&s" alt="Es Campur Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Es Campur Pokpok</h3>
+                    <p class="menu-item-description">Es campur dengan campuran buah segar dan jelly.</p>
+                     <p class="menu-item-price">Rp8.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Es Campur Pokpok', 8000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h2>Dessert</h2>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQqs9Zi3Wy6yV0NKVynbfrEIJwZBLxZPuJ5IZFzm-ZVzDxhnpro38MAks&s=10" alt="Pisang Goreng">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Pisang Goreng</h3>
+                    <p class="menu-item-description">Pisang goreng dengan taburan gula pasir.</p>
+                     <p class="menu-item-price">Rp10.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pisang Goreng', 10000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx0uZkB10zgU4rqmR8HbfWbJWXIZ6IYnY9BUTeEaiDWg&s" alt="Cendol">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Es Cendol Dawet</h3>
+                    <p class="menu-item-description">Es Cendol Dawet dengan santan dan gula merah kental.</p>
+                     <p class="menu-item-price">Rp5.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Es Cendol Dawet', 5000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3arMJC1U5x887qhCKbN2UCaHWOhjE9n_mjIsWY0LV6A&s" alt="Es Krim">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Es Krim Potong</h3>
+                    <p class="menu-item-description">Es krim dengan berbagai pilihan rasa.</p>
+                     <p class="menu-item-price">Rp10.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Es Krim', 10000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h2>Menu Spesial</h2>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5bOpD1MbJn0-e34YbAp8TpEJm4wmNfivJ3A3cDyMng&s" alt="Soto Ayam Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Soto Ayam Pokpok</h3>
+                    <p class="menu-item-description">Soto ayam dengan kuah bening, potongan daging ayam, tauge, daun bawang, dan bawang goreng.</p>
+                     <p class="menu-item-price">Rp20.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Soto Ayam Pokpok', 20000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJBVIT_B3MRoBeHAhFyK3Bulk1criu_TsJgRCy7td_QSpM1aLwpjkC8Y&s=10" alt="Iga Bakar Pokpok">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Iga Bakar Pokpok</h3>
+                    <p class="menu-item-description">Iga sapi panggang dengan bumbu khas Warung Pokpok.</p>
+                     <p class="menu-item-price">Rp35.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Iga Bakar Pokpok', 35000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            
+            <!-- Menu items -->
+        </div>
+        <!-- Other categories -->
+    </div>
+
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" onclick="toggleCartModal()">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div id="cartItems"></div>
+                        <div id="cartTotal"></div>
+            <button class="checkout-btn" onclick="checkout()" disabled>Checkout</button>
+        </div>
+    </div>
+    <div id="alertModal" class="alert-modal">
+        <div class="alert-modal-content">
+            <span class="alert-close" onclick="toggleAlertModal()">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+</body>
+</html>
